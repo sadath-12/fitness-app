@@ -24,7 +24,7 @@ const BookConsultation = () => {
 
         <div className="flex  flex-col space-y-7 flex-1">
           <p className="font-semibold text-gray-600  text-left w-[400px]">
-            When you’re trying to make a change, having the right people in your
+            When you re trying to make a change, having the right people in your
             corner can make all the difference. I get out of bed every day to
             help people become healthier versions of themselves. I decided to
             become a personal trainer because I used to walk into the gym and
@@ -32,7 +32,7 @@ const BookConsultation = () => {
             following instructions, with no clear direction or knowledge.. I
             want to help other women learn how to use free weights and empower
             them with the strength and confidence to achieve the results they
-            want, it’s a passion truly close to my heart.
+            want, it s a passion truly close to my heart.
           </p>
           <button className="font-bold text-white bg-orange-500 text-xl hover:bg-orange-300 px-8 py-3 rounded-md">Book Consultation</button>
         </div>
