@@ -28,7 +28,7 @@ const BookConsultation = () => {
             corner can make all the difference. I get out of bed every day to
             help people become healthier versions of themselves. I decided to
             become a personal trainer because I used to walk into the gym and
-            not know what I was doing. I'd wander round from machine to machine
+            not know what I was doing. I d wander round from machine to machine
             following instructions, with no clear direction or knowledge.. I
             want to help other women learn how to use free weights and empower
             them with the strength and confidence to achieve the results they
