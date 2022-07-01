@@ -2,18 +2,18 @@ import Link from "next/link";
 import React, { useState } from "react";
 import {AiOutlineMenu} from 'react-icons/ai'
 
-const MenuItems=({isMobile,active,setActive})=>{
+const MenuItems=({isMobile,active,setActive,setOpen})=>{
 
     const generateLink=(i)=>{
         switch(i){
             case 0:
-                return '/about';
+                return '#about';
              case 1:
-                return "/services"   
+                return "#services"   
              case 2:
-                return "/clients"   
+                return "#clients"   
              case 3:
-                return "/chat"   
+                return "#chat"   
         }
     }
 
@@ -22,10 +22,11 @@ const MenuItems=({isMobile,active,setActive})=>{
         <ul className={` ${isMobile ? 'flex flex-col space-y-10' : 'md:flex space-x-10 hidden flex-row'  } `}>
            {['About','Services','Clients','Chat'].map((item,i)=>(
             <li key={i}
-            onClick={()=>{setActive(item)}}
+            onClick={()=>{setActive(item);setOpen(false)}}
             className={`text-gray-600 font-semibold curso link ${active===item ? 'text-black font-bold':'' } `}
             >
-<Link href={generateLink(i)}>{item}</Link>
+{/* <Link href={generateLink(i)}>{item}</Link> */}
+<a href={generateLink(i)} className='cursor-pointer'>{item}</a>
             </li>
            ))} 
         </ul>
@@ -51,14 +52,14 @@ const Navbar = () => {
       {/* links  */}
       <div className="px-10">
 
-       <MenuItems active={active} setActive={setActive}  />
+       <MenuItems active={active} setActive={setActive} setOpen={setOpen} />
 
 {!open ? <p className="block md:hidden text-2xl cursor-pointer" onClick={()=>{setOpen(true)}} > <AiOutlineMenu/> </p> : <p className="block md:hidden z-[9999] fixed top-[40px] right-[40px]  cursor-pointer text-2xl text-white font-bold" onClick={()=>setOpen(false)} > X </p> }
 
       </div>
 
 {open && <div className="fixed inset-0 top-65 flex items-center justify-center transition-all ease-in-out duration-200">
-<MenuItems active={active} setActive={setActive} isMobile />
+<MenuItems active={active} setActive={setActive} isMobile setOpen={setOpen}  />
 </div> }
 
     </div>

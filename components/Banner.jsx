@@ -8,7 +8,7 @@ const Banner = () => {
           backgroundImage: `url(https://images.unsplash.com/photo-1522898467493-49726bf28798?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)`,
           backgroundPosition: "center",
         }}
-        className="min-w-full flex items-center justify-center  w-full h-[600px] !bg-no-repeat !bg-contain md:!bg-cover !object-cover"
+        className="min-w-full flex items-center justify-center  w-full h-[400px] sm:h-[600px] !bg-no-repeat !bg-contain md:!bg-cover !object-cover"
       >
         <div className=" text-white space-y-4 mb-5 flex flex-col items-center px-10 " >
           <h1 className="font-bold text-xl md:text-5xl">BUILD CONFIDENCE!</h1>

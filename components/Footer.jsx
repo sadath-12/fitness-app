@@ -14,7 +14,7 @@ const Footer = () => {
 {/* services  */}
 <div className='flex flex-col items-start space-y-3 cursor-pointer'>
 
-<h2 className='text-xl text-white font-semibold border-b-2 border-white p-1'>Services</h2>
+<h2 className='text-xl text-white font-bold border-b-2 border-white p-1'>Services</h2>
 <div className='flex text-white font-normal flex-col space-y-2 items-start'>
 <p>service1</p>
 <p>service1</p>
@@ -27,7 +27,7 @@ const Footer = () => {
 {/* timings  */}
 <div className='flex flex-col items-start space-y-3 cursor-pointer'>
 
-<h2 className='text-xl text-white font-semibold border-b-2 border-white p-1'>Services</h2>
+<h2 className='text-xl text-white font-bold border-b-2 border-white p-1'>Services</h2>
 <div className='flex text-white font-normal flex-col space-y-2 items-start'>
 <p>service1</p>
 <p>service1</p>
@@ -39,7 +39,7 @@ const Footer = () => {
 {/* social links  */}
 <div className='flex flex-col items-start space-y-3 cursor-pointer'>
 
-<h2 className='text-xl text-white font-semibold border-b-2 border-white p-1'>Services</h2>
+<h2 className='text-xl text-white font-bold border-b-2 border-white p-1'>Services</h2>
 <div className='flex text-white font-normal flex-col space-y-2 items-start'>
 <p>service1</p>
 <p>service1</p>

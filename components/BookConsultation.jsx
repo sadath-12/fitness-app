@@ -4,26 +4,35 @@ import img from "../public/assets/images/image3.jpg";
 
 const BookConsultation = () => {
   return (
-    <div className="px-5 py-3 flex flex-col space-y-4 w-full">
+    <div className=" md:px-5 py-3 flex flex-col  space-y-4 min-w-screen">
       <div>
         <h1 className="font-bold text-xl md:text-3xl text-center p-3 border-b-2 tracking-wider border-black">
           So What are you waiting for ?
         </h1>
       </div>
 
-      <div className="flex flex-col md:flex-row pt-10 items-center justify-center  md:mx-auto   space-x-20">
-        <div className="flex-1 md:flex-2">
+      <div className="flex pr-10 flex-col xs:w-[550px] sm:w-[600px] md:w-full md:flex-row pt-10 items-center  justify-center  md:mx-auto   space-x-20">
+        <div className="flex-1 hidden md:flex">
           <Image
             src={img}
             width={400}
             height={400}
             objectFit="cover"
-            className="rounded-lg"
+            className="rounded-lg  "
+          />
+        </div>
+        <div className="flex-1  md:hidden">
+          <Image
+            src={img}
+            width={300}
+            height={300}
+            objectFit="cover"
+            className="rounded-lg  "
           />
         </div>
 
-        <div className="flex  flex-col space-y-7 flex-1">
-          <p className="font-semibold text-gray-600  text-left w-[400px]">
+        <div className="flex  flex-col space-y-7 flex-1 ">
+          <p className="font-semibold text-gray-600   w-full lg:w-[400px] ">
             When you re trying to make a change, having the right people in your
             corner can make all the difference. I get out of bed every day to
             help people become healthier versions of themselves. I decided to

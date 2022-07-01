@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="w-full">
+    <div id="about" className="w-full">
       <div
         style={{ backgroundImage: `url(/assets/images/image2.png)` }}
         className="!bg-no-repeat md:!bg-cover    min-w-full hidden md:flex  text-center items-center justify-center h-[400px]"
